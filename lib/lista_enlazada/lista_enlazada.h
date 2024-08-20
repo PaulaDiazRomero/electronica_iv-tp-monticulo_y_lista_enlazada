@@ -2,6 +2,8 @@
 #define LISTA_ENLAZADA_H
 
 #include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 typedef struct NodoListaEnlazada NodoListaEnlazada;
 
@@ -11,7 +13,8 @@ typedef NodoListaEnlazada *ListaEnlazada;
 struct  NodoListaEnlazada
 {
     /* COMPLETAR */
-
+    int valor;                       // Valor almacenado en el nodo
+    NodoListaEnlazada *siguiente;    // Puntero al siguiente nodo en la lista
 };
 
 /**
